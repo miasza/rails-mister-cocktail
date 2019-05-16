@@ -1,0 +1,67 @@
+
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.pexels.com/photos/1266020/pexels-photo-1266020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);">
+  <div class="container">
+    <h1>All My Cocktails</h1>
+
+    <ul class="list-unstyled">
+      <% @cocktails.each do |cocktail| %>
+        <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+      <% end %>
+    </ul>
+    <%= link_to "+ Add Cocktail", new_cocktail_path(@cocktail) %>
+  </div>
+</div>
+
+  <!-- cards -->
+<div class="container d-flex my-5">
+    <div class="card-trip">
+    <img src="https://images.pexels.com/photos/997727/pexels-photo-997727.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    <div class="card-trip-infos">
+      <div>
+        <h2>Title here</h2>
+        <p>Short description here!</p>
+      </div>
+      <h2 class="card-trip-pricing">£99.99</h2>
+      <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
+    </div>
+  </div>
+
+  <div class="card-trip">
+    <img src="https://images.pexels.com/photos/1304542/pexels-photo-1304542.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    <div class="card-trip-infos">
+      <div>
+        <h2>Title here</h2>
+        <p>Short description here!</p>
+      </div>
+      <h2 class="card-trip-pricing">£99.99</h2>
+      <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
+    </div>
+  </div>
+
+  <div class="card-trip">
+    <img src="https://images.pexels.com/photos/970197/pexels-photo-970197.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    <div class="card-trip-infos">
+      <div>
+        <h2>Title here</h2>
+        <p>Short description here!</p>
+      </div>
+      <h2 class="card-trip-pricing">£99.99</h2>
+      <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
+    </div>
+  </div>
+
+  <div class="card-trip">
+    <img src="https://images.pexels.com/photos/1624173/pexels-photo-1624173.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+    <div class="card-trip-infos">
+      <div>
+        <h2>Title here</h2>
+        <p>Short description here!</p>
+      </div>
+      <h2 class="card-trip-pricing">£99.99</h2>
+      <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-trip-user avatar-bordered"/>
+    </div>
+  </div>
+
+</div>
+</div>
