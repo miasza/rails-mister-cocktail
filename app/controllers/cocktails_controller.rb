@@ -20,7 +20,7 @@ class CocktailsController < ApplicationController
   def show
     @dose = Dose.new
     @cocktail = Cocktail.find(params[:id])
-    @doses = @cocktail.doses
+    # @doses = @cocktail.doses
   end
 
   private
