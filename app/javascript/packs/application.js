@@ -15,3 +15,14 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
+import Typed from 'typed.js';
+
+const loadDynamicBannerText = () => {
+  new Typed('#banner-typed-text', {
+    strings: ["Welcome to Mr. Cocktail", "Let's Get Fancy"],
+    typeSpeed: 70,
+    loop: true
+  });
+}
+
+loadDynamicBannerText();
