@@ -1,23 +1,33 @@
-<div class="container">
-  <h1><%= @cocktail.name %></h1>
-  <ul>
-    <% @doses.each do |dose| %>
-      <li><%= dose.description %><%= dose.ingredient.name %>
-      <%= link_to "Delete", cocktail_dose_path(dose),
-      method: :delete,
-      data: { confirm: "Are you sure?" } %></li>
-     <% end %>
-  </ul>
-
-
 <div>
-  <h1>Add Ingredient</h1>
-  <%= render 'doses/form' %>
+ <%= render 'navbar' %>
 </div>
 
+<div class="container">
+  <div class="card-main row">
+    <div class="col-sm-6 col-md-4">
+      <img src="https://images.pexels.com/photos/997727/pexels-photo-997727.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=600" width='100%'>
 
-  <div>
-    <%= link_to "<-- Back to All Cocktails", cocktails_path %>
+    </div>
+    <div class="col-sm-6 col-md-4 text-center drink-name">
+      <h1><%= @cocktail.name %></h1>
+      <h4>Ingredients</h4>
+      <ul class="list-unstyled mt-4">
+        <% @doses.each do |dose| %>
+          <li>
+          <%= link_to cocktail_dose_path(dose),
+          method: :delete,
+          data: { confirm: "Are you sure?" } do %>
+            <i class="fas fa-minus-circle icon-small"></i>
+            <% end %>
+          <%= dose.ingredient.name%> <%= dose.description %>
+          </li>
+         <% end %>
+      </ul>
+    </div>
 
-  </div>
+      <%= render 'doses/form' %>
+
+
+
+
 </div>
