@@ -12,6 +12,8 @@ This is Ruby on Rails app I created in two days at the Le Wagon coding Bootcamp.
 
 Current User Stories:
 
+  * As a visitor, I can view a cocktail
+
   * As a visitor, I can create a cocktail
 
   * As a visitor, I can add an ingredient to a cocktail
