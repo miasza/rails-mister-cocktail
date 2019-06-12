@@ -4,15 +4,13 @@ This is Ruby on Rails app I created at the Le Wagon coding Bootcamp. It uses a R
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby 5.2
 
-* System dependencies
+* You may need to run `yarn install` and `bundle install`
 
-* Configuration
+* This project uses a postgreSQL database, run `rails db:create` to create the database
 
-* Database creation
-
-* Database initialization
+* Database initialization - run `rails db:migrate`
 
 * How to run the test suite
 
