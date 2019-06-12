@@ -1,6 +1,6 @@
-# README
+# Mister Cocktail
 
-This is Ruby on Rails app I created at the Le Wagon coding Bootcamp. It uses a RESTful API to allow the user to create custom cocktail recipes.
+This is Ruby on Rails app I created in two days at the Le Wagon coding Bootcamp. It uses a RESTful API to allow the user to create custom cocktail recipes.
 
 * Ruby 5.2
 
@@ -10,4 +10,14 @@ This is Ruby on Rails app I created at the Le Wagon coding Bootcamp. It uses a R
 
 * Database initialization - run `rails db:migrate`
 
+Current User Stories:
 
+  * As a visitor, I can create a cocktail
+
+  * As a visitor, I can add an ingredient to a cocktail
+
+  * As a visitor, I can delete an ingredient from a cocktail
+
+I would like to add the following:
+  
+  * A search feature
