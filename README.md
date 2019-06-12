@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is Ruby on Rails app I created at the Le Wagon coding Bootcamp. It uses a RESTful API to allow the user to create custom cocktail recipes.
 
 Things you may want to cover:
 
