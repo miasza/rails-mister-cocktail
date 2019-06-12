@@ -2,7 +2,7 @@
 
 This is Ruby on Rails app I created in two days at the Le Wagon coding Bootcamp. It uses a RESTful API to allow the user to create custom cocktail recipes.
 
-* Ruby 5.2
+* Ruby 2.5.3
 
 * You may need to run `yarn install` and `bundle install`
 
